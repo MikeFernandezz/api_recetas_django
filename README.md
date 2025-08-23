@@ -1,4 +1,4 @@
-# API Recetas Django
+# API Recetas Django "Quanticook"
 
 Una API REST desarrollada con Django para gestión de recetas de cocina.
 
@@ -16,7 +16,7 @@ Este proyecto es una API REST construida con Django y Django REST Framework que 
 - Python 3.x
 - Django
 - Django REST Framework
-- SQLite (desarrollo)
+- MySQL
 
 ## Instalación
 
@@ -101,6 +101,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## Contacto
 
-- Autor: [Tu Nombre]
-- Email: [tu-email@ejemplo.com]
-- GitHub: [tu-usuario]
+- Autor: Miguel Fernandez
+- Email: migfernandez56@gmail.com
+- GitHub: MikeFernandezz
