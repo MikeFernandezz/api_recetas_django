@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }}</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .version {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .endpoint {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        .endpoint h3 {
+            margin: 0 0 5px 0;
+            color: #2c3e50;
+        }
+        .endpoint a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .endpoint a:hover {
+            text-decoration: underline;
+        }
+        .endpoint p {
+            margin: 5px 0 0 0;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .status {
+            text-align: center;
+            padding: 15px;
+            background: #d4edda;
+            color: #155724;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ {{ titulo }}</h1>
+        <p class="version">Versión {{ version }}</p>
+        
+        <h2>📚 Endpoints Disponibles</h2>
+        
+        {% for endpoint in endpoints %}
+        <div class="endpoint">
+            <h3>{{ endpoint.nombre }}</h3>
+            <a href="{{ endpoint.url }}" target="_blank">{{ endpoint.url }}</a>
+            <p>{{ endpoint.descripcion }}</p>
+        </div>
+        {% endfor %}
+        
+        <div class="status">
+            ✅ API funcionando correctamente
+        </div>
+        
+        <div class="footer">
+            <p>Desarrollado con Django REST Framework</p>
+            <p>Para más información, visita el <a href="/admin/" target="_blank">panel de administración</a></p>
+        </div>
+    </div>
+</body>
+</html>

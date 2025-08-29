@@ -1,0 +1,16 @@
+/* Estilos principales para Quanticook */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Aquí irán los estilos de la aplicación */
